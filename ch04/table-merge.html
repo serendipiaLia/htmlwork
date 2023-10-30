@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>표 - 셀 병합(merge)</title>
+        <style>
+            table{border : 1px solid salmon;}
+            td{border: 1px solid navy; padding: 10px 10px;}
+        </style>
+    </head>
+    <!-- tr 행, td 각각의 셀 -->
+    <body>
+        <!-- 행(row) 병합 : rowspan -->
+        <table>
+            <tr>
+                <td rowspan="2">1행 1열</td>
+                <td>1행 2열</td>
+                <td>1행 3열</td>
+            </tr>
+            <tr>
+                <td>2행 2열</td>
+                <td>2행 3열</td>
+            </tr>
+        </table>    
+        <!-- 열(column) 병합(=가로) : colspan  -->
+        <table>
+            <tr>
+                <td>1행 1열</td>
+                <td>1행 2열</td>
+                <td>1행 3열</td>
+            </tr>
+            <tr>
+                <td colspan="3">비고</td>
+            </tr>
+        </table>    
+    </body>
+</html>

@@ -1,0 +1,10 @@
+/* 상단 메뉴 만들기 (navbar2.html) */
+body{margin: 0;}
+ul{list-style: none; margin: 0;} /* ul태그의 마진(16px)을 0px로 초기화 */
+    /* inline은 적용 안됨. margin 속성이 추가되어서.. */
+ul li{display: inline-block; margin: 16px; 
+    border-top: 3px solid sandybrown; padding: 10px;}
+ul li a{text-decoration: none; color: black; padding: 12px;}
+ul li :hover{background-color: coral;}
+section h1{margin-left: 50px;}
+
