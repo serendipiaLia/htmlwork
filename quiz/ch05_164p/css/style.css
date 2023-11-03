@@ -1,0 +1,6 @@
+/* front.html과 연결 */
+
+#container{width: 500px; margin: 0 auto; border: 1px solid grey; padding: 20px 50px;} 
+
+ul li{list-style: none; line-height: 2;}
+ul li label.info{width: 70px; float: left;}

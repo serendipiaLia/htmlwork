@@ -1,0 +1,39 @@
+/* index.html과 연결 */
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+*{margin: 0; padding: 0;}
+#wrap{width: 1200px; margin: 0 auto;}
+
+header{height: 60px;
+       padding: 10px;
+       background: wheat;} 
+    header #logo{width: 25%; float: left; line-height: 60px;}
+    #logo h1{color: peru; font-family: Agbalumo; font-style: italic; padding-left: 30px;}
+    
+header nav{width: 70%; /* header 크기의 60%, 약 700px */
+           float: right;
+           text-align: center;}
+  
+        nav ul li{display: inline-block; line-height: 60px; margin: 0 0 0 80px; list-style: none;}
+        ul li a{color: peru; text-decoration: none;}
+        ul li a:hover{color: white;}
+
+main{height: 600px; padding: 5px; border: 5px solid blanchedalmond}
+    main h2{margin: 10px 20px;}
+
+section{float: left; width: 31%; height: 520px; border: 1px dotted green; margin: 5px; padding: 5px;}
+
+section h3{background: url(../images/dot.png) no-repeat; 
+           background-position: 5px 23px; /* x,y좌표 : (left 5,top 23) */
+           padding: 16px 32px;}
+
+section dl dt{font-weight: bold;}
+section dl dd{margin-bottom: 16px;}
+
+aside{clear: both; padding: 40px 20px 60px; background: ivory;}
+
+aside img{float: left; margin: 10px 100px 10px 10px; border-radius: 20px;}
+aside h3{padding-left: 30px;}
+aside ul li{margin: 10px 60px;}
+
+footer{padding: 20px 10px; background:burlywood;}
+footer p{color: azure; text-align: center;}

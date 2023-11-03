@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 예제</title>
+    <!-- 1. #contents의 배경 이미지는 images/bg.jpg로 지정하는데, 배경 이미지는 반복하지 않고 크기는 꽉 채워서 보이도록.. -->
+    <!-- 2. <h1>태그를 사용한 제목의 크기와 위치는 출력물과 유사하게 지정하고, 글자에 그림자 효과를 추가 -->
+    <style>
+        /* position : relative; -> 이미지가 기준이 됨 */
+        #contents{width: 1000px; height: 500px; background: url(image/bg.jpg) no-repeat; background-size: cover;
+            position: relative;}
+        
+        h1{margin: 0; font-size: 100px; color: white; text-shadow: 4px 4px 10px wheat; 
+            /* 원하는 위치로 배치 */
+            position: absolute; bottom: 80px; right: 140px;}
+    </style>
+</head>
+<body>
+    <div id="contents">
+        <h1>CSS3</h1>
+    </div>
+</body>
+</html>

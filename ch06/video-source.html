@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video - source 태그 </title>
+</head>
+<body>
+    <!-- <video src="medias/flower.mp4" autoplay muted> : 자동재생 | controls : 플레이어 (버튼생성) -->
+        <!-- img파일도 실행오류시 글로 표시 설명하는 alt 처럼, video파일도 실행오류시 poster로 사진표시 설명 -->
+    <video src="medias/flower.mp4" controls poster="images/flowers.PNG">
+        <!-- source 태그는 video태그가 지원되지 않는 경우 작동 -->
+        <source src="medias/flower.mp4" type="video/mp4">
+    </video>
+    
+</body>
+</html>

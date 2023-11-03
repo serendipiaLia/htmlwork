@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word-wrap 속성</title>
+    <style>
+        ul{width: 180px; border: 1px solid sienna;}
+        ul li{margin: 10px; 
+            /* 영어 단어 줄 바꿈(알파벳 철자) */
+            /* word-break: break-word;  */
+            word-wrap: break-word;  } 
+            
+            /* 영어 단어를 줄 바꿈(단어 기준) */
+            /* word-break: break-all;  */
+    </style>
+</head>
+<body>
+    <ul>
+        <li>이름 : 이나경</li>
+        <!-- style에서 word-wrap:break-word; 해줬기에 px칸 안으로 들어감(=줄바꿈)-->
+        <li>이메일 : nagyunglee1213@html.com</li>
+        <li>주소 : 서울시 영등포구 선유동2로 이레빌딩 19F</li>
+        <li>apple bear chicken horse tiger dog cat</li>
+    </ul>
+</body>
+</html>

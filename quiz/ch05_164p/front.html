@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프런트엔드 개발자 지원서</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>프런트엔드 개발자 지원서</h1>    
+        <p>HTML, CSS, JavaScript의 기술을 이해하고 실무 경험이 있는 분을 찾습니다.</p>
+        <hr>
+        <form action="apply.jsp" method="post"></form>
+        <h3>개인 정보</h3>
+        <ul>
+            <li>
+                <label for="name" class="info">이름</label>
+                <input type="text" name="name" placeholder=" 공백 없이 입력하세요" autofocus required></label>
+            </li>
+            <li>
+                <label for="phone" class="info">연락처</label>
+                <input type="tel" name="phone" placeholder=" ' - '없이 입력하세요" required></label>
+            </li>
+        </ul>
+
+        <h3>지원 분야</h3>
+        <ul>
+        <!-- name을 다르게 하면 중복 선택됨! name을 같이 했으므로 하나만 선택 가능! -->
+            <li> 
+            <label><input type="radio" name="apply" value="webpub">웹 퍼블리싱</label>
+            </li>
+            <li>
+            <label><input type="radio" name="apply" value="webapp">웹 애플리케이션 개발</label>
+            </li>
+            <li>
+            <label><input type="radio" name="apply" value="env">개발 환경 개선</label>
+            </li>
+        </ul>
+
+        <h3>지원 동기</h3>
+        <textarea cols="60" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
+           
+        <div>
+        <input type="submit" value="접수하기">
+        <input type="reset" value="다시쓰기">
+<!--    <button type="submit">접수하기</button> 
+        <button type="reset">다시쓰기</button>          -->
+        </div> 
+
+    </div>
+</body>
+</html>

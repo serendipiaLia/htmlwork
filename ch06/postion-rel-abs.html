@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position-relative 속성</title>
+    <style>
+        .rectangle1{width: 300px; height: 300px; margin: 100px; background: wheat; 
+        position: relative;} /* rectangle2는 부모인 rectangle1이 기준! */
+        .rectangle2{width: 100px; height: 100px; background: yellowgreen;
+        position: absolute; right: -50px; bottom: 100px;} 
+        /* position: absolute; top: 50px; left: 100;} */
+    </style>
+</head>
+<body> <!-- 박스 모델이 부모 자식 관계임 -->
+    <div class="rectangle1">
+        <div class="rectangle2"></div>
+    </div>    
+</body>
+</html>

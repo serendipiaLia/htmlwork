@@ -1,0 +1,8 @@
+/* after2.html과 연결 */
+#wrap{width: 700px; margin: 0 auto;}
+
+nav{border-bottom: 1px solid darkblue;}
+nav ol{list-style: none; padding-left: 0;}
+nav ol li{display: inline-block;} 
+ol li a{text-decoration: none;}
+ol li a::after{content: ">"; color: brown; padding: 0 5px; font-size: 0.8em; font-weight: bold;}

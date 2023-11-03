@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>여러 줄 입력</title>
         <style>
+            /* textarea : 여러 줄 입력, 멀티 라인 태그  */
             /* 크기 조정 불가 */
             textarea{resize: none;}
             
@@ -19,6 +20,8 @@
         <form action="" method="post">
             <fieldset>
                 <legend>배송 업무</legend>
+                <!-- cols(칼럼) 영어기준 글자 수 / row(행) : 보이는 줄 수 -->
+                <!-- placeholder : 힌트 글-->
                 <textarea cols="60" rows="5" name="memo" placeholder="배송 시 요청사항을 적어주세요"></textarea>
             </fieldset>
             <input type="submit" value="전송">
