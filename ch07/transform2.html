@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform 속성(변형)</title>
+    <style>
+        /* transform 속성값
+            - rotate() : 회전
+            - translate() : 이동
+            - scale() : 크기    */
+        div.a{width: 150px; height: 80px; background-color: pink;}
+                                                         
+        div.b{width: 150px; height: 80px; background-color: pink;}
+        div.b:hover{transform: translateX(50px);}  /* 마우스 올렸을 때, X축 방향으로 50px 이동 */
+                                        
+        div.c{width: 150px; height: 80px; background-color: pink;}
+        div.c:hover{transform: rotate(30deg);} /* 마우스 올렸을 때, 시계방향으로 30도 회전 (deg : degree, 회전각도)*/
+
+        div.d{width: 150px; height: 80px; background-color: pink;}
+        div.d:hover{transform: scaleY(1.5);}  /* 마우스 올렸을 때, Y축으로 1.5배 커짐 */
+        /* transform : scaleY(0.5) >>  y축으로 0.5 축소 */
+        /* transform : sclae(1.5) >> x,y 양쪽 방향으로 확대 및 축소 */
+        div.e{width: 150px; height: 80px; background-color: pink;}
+        div.e:hover{transform: skewX(30deg)}
+    </style>
+</head>
+<body>
+    <h2>변형 전 개체</h2>
+    <div class="a"></div>
+
+    <h2>transform : translateX(50px)</h2>
+    <div class="b">X축 방향으로 50px 이동</div>
+    
+    <h2>transform : rotate(30deg)</h2> 
+    <div class="c">30도 시계방향으로 회전</div>
+
+    <h2>transform : scale(1.5)</h2> 
+    <div class="d">1.5배 확대</div>
+
+    <h2>transform : skewX(30deg)</h2> 
+    <div class="e">x축 기준으로 30도 비틀기</div>
+</body>
+</html>

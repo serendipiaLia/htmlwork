@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition 속성(시간)</title>
+    <style>
+        .tr1{width: 100px; height: 100px; background-color: lightcoral;
+      
+        /* transition 속성 - 시간(s-second) : 1s(= 1초) */
+        /* transition-property: width;
+        transition-duration: 1s; */
+
+        /* 1s, 2s 사이 콤마 없을 시 2초 지연 후 1초뒤 변경! */
+        transition : width, height, 1s 2s; 
+        }  
+
+        .tr1:hover{width: 200px; height: 300px;} /* 마우스 올렸을 때, 크기가 늘어남 ! */
+    </style>
+</head>
+<body>
+    <div class="tr1"></div>
+    
+</body>
+</html>
